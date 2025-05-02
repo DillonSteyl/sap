@@ -28,9 +28,9 @@ extends Provider
 
 var player: Player
 
-func _init(player_node: Player):
-  super()
-  player = player_node
+func _init(node: Node):
+  super(node)
+  player = node
 ```
 
 ...and attach this provider to the player:
